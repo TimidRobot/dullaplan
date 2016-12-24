@@ -173,6 +173,6 @@ echo "4200,${remote_auth_token},127.0.0.1" > "${local_config}"
 
 echo
 echo 'Creating SSH Tunnel...'
-echo '   - Close this connection to revert local config'
+echo '    Close this connection to revert local config'
 echo
 sudo -u ${SUDO_USER} ssh -NTx -L 4200:localhost:4243 brick

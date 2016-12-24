@@ -10,6 +10,32 @@ headless Crashplan server.
 .. _`Crashplan`: https://www.crashplan.com/
 
 
+
+Usage
+-----
+
+1. Execute ``dullaplan`` (example below assumes Mac OS local and Linux
+   remote)::
+
+    sudo dullaplan.sh backupserver
+
+    Parameters:
+        remote_host:       backupserver
+        remote_config:     /var/lib/crashplan/.ui_info
+        remote_auth_token: abcdefgh-ijkl-mnop-qrst-uvwxyz012345
+        local_config:      /Library/Application Support/CrashPlan/.ui_info
+        local_backup:      /Library/Application Support/CrashPlan/.ui_info.bak
+
+    Creating SSH Tunnel...
+        Close this connection to revert local config
+
+2. Open Crashplan application
+3. (Complete the tasks that require the GUI)
+4. Close Crashplan application
+5. Quit ``dullaplan`` (ex. ``^C``) or close the terminal window it was launched
+   in.
+
+
 References
 ----------
 
