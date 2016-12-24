@@ -33,16 +33,16 @@ Usage
 
    A. Example invocation::
 
-    sudo dullaplan.sh backupserver
+        sudo dullaplan.sh backupserver
 
    B. Example output::
 
-    Parameters:
-        remote_host:       backupserver
-        remote_config:     /var/lib/crashplan/.ui_info
-        remote_auth_token: abcdefgh-ijkl-mnop-qrst-uvwxyz012345
-        local_config:      /Library/Application Support/CrashPlan/.ui_info
-        local_backup:      /Library/Application Support/CrashPlan/.ui_info.bak
+        Parameters:
+            remote_host:       backupserver
+            remote_config:     /var/lib/crashplan/.ui_info
+            remote_auth_token: abcdefgh-ijkl-mnop-qrst-uvwxyz012345
+            local_config:      /Library/Application Support/CrashPlan/.ui_info
+            local_backup:      /Library/Application Support/CrashPlan/.ui_info.bak
 
     Creating SSH Tunnel...
         Close this connection to revert local config
