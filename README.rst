@@ -28,8 +28,7 @@ What it Does
 Usage
 -----
 
-1. Execute ``dullaplan`` (example below assumes Mac OS local and Linux
-   remote):
+1. Execute ``dullaplan`` (example below assumes macOS local and Linux remote):
 
    A. Example invocation::
 
