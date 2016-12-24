@@ -29,9 +29,13 @@ Usage
 -----
 
 1. Execute ``dullaplan`` (example below assumes Mac OS local and Linux
-   remote)::
+   remote):
+
+   A. Example invocation::
 
     sudo dullaplan.sh backupserver
+
+   B. Example output::
 
     Parameters:
         remote_host:       backupserver
