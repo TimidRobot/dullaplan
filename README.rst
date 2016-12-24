@@ -10,6 +10,20 @@ headless Crashplan server.
 .. _`Crashplan`: https://www.crashplan.com/
 
 
+What it Does
+------------
+
+1. Updates local config file so that the Crashplan GUI application connects to
+   the remote server via port forward instead of the local server
+
+   A. Finds remote config file and extracts authentication token
+   B. Backs up local config file
+   C. Writes new local config file with remote authentication token and updated
+      port number (to use SSH port forward)
+
+2. Creates SSH connection with port forward
+3. Restores local config file on exit
+
 
 Usage
 -----
@@ -33,7 +47,7 @@ Usage
 3. (Complete the tasks that require the GUI)
 4. Close Crashplan application
 5. Quit ``dullaplan`` (ex. ``^C``) or close the terminal window it was launched
-   in.
+   in
 
 
 References
