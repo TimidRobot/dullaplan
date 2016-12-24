@@ -44,8 +44,8 @@ Usage
             local_config:      /Library/Application Support/CrashPlan/.ui_info
             local_backup:      /Library/Application Support/CrashPlan/.ui_info.bak
 
-    Creating SSH Tunnel...
-        Close this connection to revert local config
+        Creating SSH Tunnel...
+            Close this connection to revert local config
 
 2. Open Crashplan application
 3. (Complete the tasks that require the GUI)
