@@ -140,7 +140,7 @@ backup_config () {
 # Invocation checks
 if (( ${UID} != 0 ))
 then
-    error_exit 'ERROR: Must be root (invoke with sudo)'
+    error_exit 'Must be root (invoke with sudo)'
 fi
 help_request_check "${@:-}"
 if (( ${#} == 0 ))
