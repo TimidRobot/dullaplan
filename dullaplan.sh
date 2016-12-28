@@ -138,10 +138,6 @@ backup_config () {
 #### MAIN #############################################################
 
 # Invocation checks
-if (( ${UID} != 0 ))
-then
-    error_exit 'Must be root (invoke with sudo)'
-fi
 help_request_check "${@:-}"
 if (( ${#} == 0 ))
 then
@@ -152,6 +148,10 @@ if (( ${#} > 1 ))
 then
    echo 'ERROR: invalid parameters. Specify only a single REMOTE_HOST:' 1>&2
    help_print 2
+fi
+if (( ${UID} != 0 ))
+then
+    error_exit 'Must be root (invoke with sudo)'
 fi
 
 remote_host="${1}"
