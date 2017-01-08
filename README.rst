@@ -28,7 +28,8 @@ What it Does
 Usage
 -----
 
-1. Execute ``dullaplan`` (example below assumes macOS local and Linux remote):
+1. Execute ``dullaplan.sh`` (example below assumes macOS local and Linux
+   remote):
 
    A. Example invocation::
 
@@ -49,8 +50,35 @@ Usage
 2. Open Crashplan application
 3. (Complete the tasks that require the GUI)
 4. Close Crashplan application
-5. Quit ``dullaplan`` (ex. ``^C``) or close the terminal window it was launched
-   in
+5. Quit ``dullaplan.sh`` (ex. ``^C``) or close the terminal window it was
+   launched in
+
+
+Install
+-------
+
+1. `Install Homebrew`_ — The missing package manager for macOS
+2. Add the TimZehta "tap" and install dullaplan::
+
+    brew tap TimZehta/tap
+    brew install dullaplan
+
+Alternatively, since ``dullaplan.sh`` is a bash script without esoteric
+dependencies, you can simply download it and ensure it is in your ``PATH``.
+
+.. _`Install Homebrew`: http://brew.sh/#install
+
+
+Requirements
+------------
+
+- `Crashplan`_
+- \*nix Operating System with
+
+  - core utilities (``awk``, ``col``, and ``find``)
+  - GNU Bourne-Again Shell (``bash``)
+  - OpenSSH (``ssh``)
+  - Sudo (``sudo``)
 
 
 References
