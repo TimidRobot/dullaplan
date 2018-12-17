@@ -58,9 +58,9 @@ Install
 -------
 
 1. `Install Homebrew`_ — The missing package manager for macOS
-2. Add the TimZehta "tap" and install dullaplan::
+2. Add the TimidRobot "tap" and install dullaplan::
 
-    brew tap TimZehta/tap
+    brew tap TimidRobot/tap
     brew install dullaplan
 
 Alternatively, since ``dullaplan.sh`` is a bash script without esoteric
@@ -93,10 +93,6 @@ References
 License
 -------
 
-.. image:: https://img.shields.io/github/license/TimZehta/dullaplan.svg
-    :alt: badge: GitHub license (MIT)
-    :align: right
-    :target: `MIT License`_
-- `<LICENSE>`_ (`MIT License`_)
+- `<LICENSE>`_ (Expat/`MIT License`_)
 
 .. _`MIT License`: http://www.opensource.org/licenses/MIT
